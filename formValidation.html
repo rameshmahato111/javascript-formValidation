@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="bg-slate-300 font-serif">
+    <div class="max-w-[400px] mx-auto bg-[#FFFFFF]  shadow-md rounded-lg mt-20">
+        <div>
+            <h1 class="text-xl  text-center py-3 font-semi-bold">Please Log In Here</h1>
+
+        </div>
+        <div class="px-3 pb-3">
+
+            <form id="form" onsubmit="return validForm()"> 
+
+               
+
+
+                
+
+                <div class="pt-8  relative">
+                    <input type="text" id="fullname" name="fullname" placeholder="FullName"
+                        class="w-full h-10  focus:outline-none border-b-2 border-pink-600 rounded peer placeholder-transparent"
+                        onkeyup="fnameValidation()"/>
+                        <div id='fnameMsg'></div>
+                    <label for="password"
+                        class="absolute left-1 -top-1  text-sm text-gray-600 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-6 peer-focus:-top-0.5 peer-focus:text-gray-600 peer-focus:text-sm transition-all">FulltName</label>
+                </div>
+                <div class="pt-8  relative">
+                    <input type="email" id="email" name="email" placeholder=" Email"
+                        class="w-full h-10  focus:outline-none border-b-2 border-pink-600 rounded peer placeholder-transparent" 
+                        onkeyup="emailValidation()"/>
+                        <div id='emailMsg'></div>
+
+                    <label for="email"
+                        class="absolute left-1 -top-0.5 text-sm text-gray-600 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-6 peer-focus:-top-0.5 peer-focus:text-gray-600 peer-focus:text-sm transition-all">Email
+                    </label>
+                </div>
+                <div class="pt-8  relative">
+                    <input type="password" id="password" name="password" placeholder=" Password"
+                        class="w-full h-10  focus:outline-none border-b-2 border-pink-600 rounded peer placeholder-transparent" 
+                        onkeyup="passValidation()"/>
+                        <div id='passwdMsg'></div>
+
+                    <label for="username"
+                        class="absolute left-1 -top-0.5 text-sm text-gray-600 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-6 peer-focus:-top-0.5 peer-focus:text-gray-600 peer-focus:text-sm transition-all">Password
+                    </label>
+                </div>
+
+                <div class="pt-8  relative">
+                    <input type="cpassword" id="cpwd" name="cpwd" placeholder=" CPassword"
+                        class="w-full h-10  focus:outline-none border-b-2 border-pink-600 rounded peer placeholder-transparent" 
+                        onkeyup="CpValidation()"/>
+                        <div id='cpasswdMsg'></div>
+
+                    <label for="username"
+                        class="absolute left-1 -top-0.5 text-sm text-gray-600 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-6 peer-focus:-top-0.5 peer-focus:text-gray-600 peer-focus:text-sm transition-all">CPassword
+                    </label>
+                </div>
+                
+
+                <div class="text-center my-7"><button type="submit" value="Register"
+                    
+                        class="px-6 py-2 border-2 border-pink-600 rounded-lg shadow-lg shadow-pink-400 bg-pink-400 text-[#FFFFFF]">Send</button>
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+
+    
+    <script src='validation.js'></script>
+</body>
+</html>

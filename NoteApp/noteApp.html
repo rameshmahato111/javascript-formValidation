@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Note App</title>
+    </head>
+
+    <body>
+        <div class="max-w-[500px] mx-auto bg-gray-200 px-3 mt-10 py-2">
+            <h1 class="text-xl font-serif font-bold">Create new note here</h1>
+            <div class=" mt-10">
+
+                <textarea type="text" name="noteapp" id="noteapp" placeholder="Write notes here"
+                    class="text-center focus:outline-none border-2 border-purple-400 shadow-purple-400 w-full"
+                    >
+                </textarea>
+                <div id="noteMsg"></div>
+            </div>
+            <button onclick="Createnotes()" class="rounded bg-purple-400 text-white px-4 py-2 text-lg mt-4 shadow-lg shadow-purple-400">Create</button>
+
+            <div class="mt-10">
+                <h1>Created Notes appear here</h1>
+            </div>
+            <div id="notes" class="mt-10 text-lg text-serif ">
+                
+            </div>
+
+        </div>
+
+        
+        <script src="noteApp.js"></script>
+    </body>
+
+</html>
